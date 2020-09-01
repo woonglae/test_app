@@ -20,6 +20,8 @@ export default class App extends React.Component {
           <TouchableOpacity style = {styles.addList} >
             <AntDesign name="plus" size={16} color = {colors.blue} />
           </TouchableOpacity>
+
+          <Text style = {styles.add}>Add List</Text>
         </View>
       </View>
     );
@@ -52,5 +54,11 @@ const styles = StyleSheet.create({
     padding: 16,
     alignItems:"center",
     justifyContent:"center"
+  },
+  add: {
+    color : colors.blue,
+    fontWeight:"600",
+    fontSize: 14,
+    marginTop:8,
   }
 });
