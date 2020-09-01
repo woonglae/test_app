@@ -31,7 +31,7 @@ export default tempData = [
             },
             {
                 title:"Milk",
-                completed: false
+                completed: true
             },
             {
                 title:"Orange",

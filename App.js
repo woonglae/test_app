@@ -1,13 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, FlatList, Modal} from 'react-native';
 import {AntDesign} from '@expo/vector-icons'
 import colors from './Colors'
+import tempData from './tempData'
+import TodoList from './components/TodoList'
 
 export default class App extends React.Component {
   render() {
     return (
       <View style = {styles.container}>
+        
+        <Modal animationType="slide">
+          <View>modal!!!!</View>
+        </Modal>
+
         <View style = {{flexDirection: "row"}}>
           <View style = {styles.divider} />
           <Text style = {styles.title}>
@@ -23,6 +30,19 @@ export default class App extends React.Component {
 
           <Text style = {styles.add}>Add List</Text>
         </View>
+
+        <View style = {{height: 275, paddingLeft: 32}}>
+          <FlatList 
+            data={tempData} 
+            keyExtractor = {item => item.name} 
+            horizontal = {true} 
+            showsHorizontalScrollIndicator= {false}
+            renderItem={({item}) => (
+              <TodoList list={item}></TodoList>
+            )}
+          />
+        </View>
+
       </View>
     );
   }
