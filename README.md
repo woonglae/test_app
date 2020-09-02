@@ -1,14 +1,19 @@
-# To-do List
-This is a mobile applocation to manage things to do.
+# ✅TO-DO List
+This is a mobile application to manage things to do.
 
-## Features
+## Description
+This application is implemented by Woongrae Cho and Heejoo Cho following tutorial videos made by [DesignIntoCode](https://www.youtube.com/playlist?list=PLqtWgQ5BRLPvbmeIYf769yb25g4W8NUZo)).
 
+## To start
+1. Download [node.js](https://nodejs.org/en/)
+Use pacakge manager [npm](https://www.npmjs.com/get-npm) to install expo
+2. ```npm install expo-cli --global```
+3. ```npm add expo```
 
-## Run code
+## To run code
 1. Clone this repository
-2. Go to the directory of repository
+2. Go to the directory of repository using terminal
 3. ```expo start```
-
 
 ## Source
 [DesignIntoCode](https://www.youtube.com/playlist?list=PLqtWgQ5BRLPvbmeIYf769yb25g4W8NUZo)
