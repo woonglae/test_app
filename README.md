@@ -8,7 +8,8 @@ This application is implemented by Woongrae Cho and Heejoo Cho following tutoria
 1. Download [node.js](https://nodejs.org/en/)
 
 2. Use pacakge manager [npm](https://www.npmjs.com/get-npm) to install expo  
-```npm install expo-cli --global```  ```npm add expo```
+```npm install expo-cli --global```
+  ```npm add expo```
 
 ## To run code
 1. Clone this repository
